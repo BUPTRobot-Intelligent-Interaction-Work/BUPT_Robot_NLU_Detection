@@ -1,0 +1,91 @@
+version: "3.1"
+
+intents:
+  - author
+  - expression
+  - classify
+  - ask_for_way
+  - greet
+  - goodbye
+
+entities:
+  - exhibits
+
+slots:
+  exhibits:
+    type: categorical
+    values:
+      - 蒙娜丽莎的微笑
+      - 星夜
+      - 最后的晚餐
+      - 华沙的双塔
+      - 大卫
+      - 苏洛伊斯的诞生
+      - 自由领袖
+      - 吉普赛女人
+    influence_conversation: true
+    mappings:
+      - entity: exhibits
+        type: from_entity
+
+responses:
+  utter_greet:
+    - text: "你好！我是导览助手，很高兴为您服务。"
+  utter_goodbye:
+    - text: "再见！欢迎下次再来。"
+  utter_author_1:
+    - text: "蒙娜丽莎的微笑是莱昂纳多·达·芬奇创作的。"
+  utter_author_2:
+    - text: "星夜是文森特·梵高创作的。"
+  utter_author_3:
+    - text: "最后的晚餐是莱昂纳多·达·芬奇创作的。"
+  utter_author_4:
+    - text: "华沙的双塔是文森特·梵高创作的。"
+  utter_author_5:
+    - text: "大卫是米开朗基罗创作的。"
+  utter_author_6:
+    - text: "苏洛伊斯的诞生是米开朗基罗创作的。"
+  utter_author_7:
+    - text: "自由领袖是米开朗基罗创作的。"
+  utter_author_8:
+    - text: "吉普赛女人是米开朗基罗创作的。"
+  utter_expression_1:
+    - text: "这幅肖像画展示了一位神秘微笑的女性，背景是意大利的风景。蒙娜丽莎的微笑被认为是神秘的，令人难以捉摸，象征了人类情感的复杂性和不可测性。达·芬奇通过细致入微的笔触和独特的明暗对比技术，使画作充满了生命力。"
+  utter_expression_2:
+    - text: "梵高的这幅画描绘了一个充满动感和涡旋的夜空，星星闪烁，天空似乎在旋转。作品表达了艺术家内心的挣扎和对自然力量的敬畏，同时也传递出一种超越现实的精神力量，象征着孤独与对未知的探索。"
+  utter_expression_3:
+    - text: "这幅壁画描绘了耶稣在被捕前最后一次与门徒共进晚餐的场景。达·芬奇抓住了这一关键时刻，表现了门徒们的震惊和情感反应。画作突出了耶稣即将被出卖的主题，反映了背叛、牺牲和人性的复杂。"
+  utter_expression_4:
+    - text: "华沙的标志性建筑如文化和科学宫和现代摩天大楼，象征了波兰在二战后的重建和现代化进程。它们不仅是城市天际线的重要组成部分，也代表了波兰民族的坚韧和复兴精神。"
+  utter_expression_5:
+    - text: "米开朗基罗的这座雕塑表现了圣经中的大卫王在击败巨人歌利亚前的准备姿态，象征着勇气、力量和年轻的自信。大卫的形象也被看作是佛罗伦萨共和国独立和自由的象征，体现了文艺复兴时期人文主义思想。"
+  utter_expression_6:
+    - text: "波提切利的这幅画描绘了爱与美的女神维纳斯从海中诞生的场景，象征着美、爱和新生。作品充满了神话色彩，反映了文艺复兴时期对古典文化的崇拜和对人类美的庆祝。"
+  utter_expression_7:
+    - text: "德拉克罗瓦的这幅画表现了1830年法国七月革命中的场景，一位象征自由的女性高举法国国旗，带领人民走向革命。作品象征着自由、平等和博爱，激励了无数后来的革命者。"
+  utter_expression_8:
+    - text: "这幅画描绘了一位吉普赛女性的肖像，展示了她的神秘和独特魅力。作品通过真实生动的刻画，反映了艺术家对不同文化和社会阶层的关注，表现了人类多样性的美丽。"
+  utter_classify_1:
+    - text: "蒙娜丽莎的微笑是肖像画。"
+  utter_classify_2:
+    - text: "星夜是描绘风景的油画。"
+  utter_classify_3:
+    - text: "最后的晚餐是壁画。"
+  utter_classify_4:
+    - text: "华沙的双塔是华沙的标志性建筑。"
+  utter_classify_5:
+    - text: "大卫是雕塑作品。"
+  utter_classify_6:
+    - text: "苏洛伊斯的诞生是绘画作品。"
+  utter_classify_7:
+    - text: "自由领袖是历史画作。"
+  utter_classify_8:
+    - text: "吉普赛女人是肖像画。"
+
+  utter_ask_for_way:
+    - text: "好的，请跟我来。"
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

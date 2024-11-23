@@ -1,0 +1,96 @@
+version: "3.1"
+
+nlu:
+
+- intent: author
+  examples: |
+    - [最后的晚餐](exhibits)是谁画的
+    - [大卫](exhibits)是谁创作的
+    - [苏洛伊斯的诞生](exhibits)作者是谁？
+    - 谁创作了[华沙的双塔](exhibits)？
+    - [华沙的双塔](exhibits)背后的艺术家是谁？
+    - [自由领袖]的作品归谁所有？
+    - [领袖]出自哪位艺术家之手？
+
+- intent: expression
+  examples: |
+    - 介绍一下[蒙娜丽莎的微笑](exhibits)的表现
+    - [大卫](exhibits)的含义是什么
+    - [双塔](exhibits)的主题是什么
+    - [苏洛伊斯](exhibits)的意义是什么
+    - 怎么理解[苏洛伊斯](exhibits)
+    - [星夜](exhibits)的寓意是什么
+    - [蒙娜丽莎的微笑](exhibits)表达了什么
+    - [蒙娜丽莎](exhibits)代表什么意义？
+    - [自由领袖](exhibits)的主题是什么？
+    - [吉普赛女人](exhibits)描绘了什么内容？
+    - [星夜](exhibits)想要传达什么信息？
+    - 能解释一下这个[自由领袖](exhibits)的含义吗？
+
+- intent: classify
+  examples: |
+    - [大卫](exhibits)是什么类型的
+    - [蒙娜丽莎](exhibits)这个作品的类型是什么
+    - [星夜](exhibits)是什么类型的作品
+    - [华沙的双塔](exhibits)属于什么类型的艺术？
+    - [星夜]是什么风格的？
+    - [双塔]是哪个艺术流派的代表？
+    - [华沙的双塔](exhibits)可以归类为哪种类型？
+    - [自由领袖](exhibits)是什么种类的作品？
+    - [苏洛伊斯]的艺术类型是什么？
+    - [大卫](exhibits)被分类在哪个艺术类别中？
+    - [苏洛伊斯](exhibits)代表了哪种艺术形式？
+    - [大卫](exhibits)属于哪种艺术风格？
+    - [最后的晚餐](exhibits)是哪种艺术流派的？
+
+- intent: ask_for_way
+  examples: |
+    - [华沙的双塔](exhibits)怎么走
+    - 我想去[大卫](exhibits)
+    - [大卫](exhibits)在哪里
+    - 怎样前往[最后的晚餐](exhibits)
+
+- intent: greet
+  examples: |
+    - 你好
+    - 你在吗
+    - 你好啊
+    - 早啊
+    - 午好
+    - 晚上好
+    - Hello
+    - hello
+    - Hi
+    - hi
+    - 喂
+    - 在么
+
+- intent: goodbye
+  examples: |
+    - 再见
+    - 下次再见
+    - 拜拜
+    - 晚安
+    - 拜
+    - 拜拜了
+    - 下次再聊
+    - 下次见
+    - 退出
+    - 结束
+
+- synonym: 蒙娜丽莎的微笑
+  examples: |
+    - 蒙娜丽莎
+
+- synonym: 华沙的双塔
+  examples: |
+    - 双塔
+
+- synonym: 苏洛伊斯的诞生
+  examples: |
+    - 苏洛伊斯
+
+- synonym: 自由领袖
+  examples: |
+    - 领袖
+

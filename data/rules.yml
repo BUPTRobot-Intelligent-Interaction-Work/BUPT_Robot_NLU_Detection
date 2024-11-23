@@ -1,0 +1,190 @@
+version: "3.1"
+
+rules:
+  - rule: greet
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  - rule: Response to 蒙娜丽莎的微笑 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 蒙娜丽莎的微笑
+    - action: utter_author_1
+
+  - rule: Response to 星夜 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 星夜
+    - action: utter_author_2
+
+  - rule: Response to 最后的晚餐 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 最后的晚餐
+    - action: utter_author_3
+
+  - rule: Response to 华沙的双塔 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 华沙的双塔
+    - action: utter_author_4
+
+  - rule: Response to 大卫 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 大卫
+    - action: utter_author_5
+
+  - rule: Response to 苏洛伊斯的诞生 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 苏洛伊斯的诞生
+    - action: utter_author_6
+
+  - rule: Response to 自由领袖 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 自由领袖
+    - action: utter_author_7
+
+  - rule: Response to 吉普赛女人 author
+    steps:
+    - intent: author
+      entities:
+      - exhibits: 吉普赛女人
+    - action: utter_author_8
+
+  - rule: Response to 蒙娜丽莎的微笑 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 蒙娜丽莎的微笑
+    - action: utter_expression_1
+
+  - rule: Response to 星夜 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 星夜
+    - action: utter_expression_2
+
+  - rule: Response to 最后的晚餐 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 最后的晚餐
+    - action: utter_expression_3
+
+  - rule: Response to 华沙的双塔 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 华沙的双塔
+    - action: utter_expression_4
+
+  - rule: Response to 大卫 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 大卫
+    - action: utter_expression_5
+
+  - rule: Response to 苏洛伊斯的诞生 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 苏洛伊斯的诞生
+    - action: utter_expression_6
+
+  - rule: Response to 自由领袖 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 自由领袖
+    - action: utter_expression_7
+
+  - rule: Response to 吉普赛女人 expression
+    steps:
+    - intent: expression
+      entities:
+      - exhibits: 吉普赛女人
+    - action: utter_expression_8
+
+  - rule: Classify 蒙娜丽莎的微笑
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 蒙娜丽莎的微笑
+    - action: utter_classify_1
+
+  - rule: Classify 星夜
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 星夜
+    - action: utter_classify_2
+
+  - rule: Classify 最后的晚餐
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 最后的晚餐
+    - action: utter_classify_3
+
+  - rule: Classify 华沙的双塔
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 华沙的双塔
+    - action: utter_classify_4
+
+  - rule: Classify 大卫
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 大卫
+    - action: utter_classify_5
+
+  - rule: Classify 苏洛伊斯的诞生
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 苏洛伊斯的诞生
+    - action: utter_classify_6
+
+  - rule: Classify 自由领袖
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 自由领袖
+    - action: utter_classify_7
+
+  - rule: Classify 吉普赛女人
+    steps:
+    - intent: classify
+      entities:
+      - exhibits: 吉普赛女人
+    - action: utter_classify_8
+
+  - rule: ask_for_way
+    steps:
+    - intent: ask_for_way
+    - action: utter_ask_for_way
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot

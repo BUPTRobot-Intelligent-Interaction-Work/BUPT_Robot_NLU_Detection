@@ -1,0 +1,30 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# The assistant project unique identifier
+# This default value must be replaced with a unique assistant name within your deployment
+
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: zh
+
+pipeline: 
+  - name: JiebaTokenizer
+  - name: LanguageModelFeaturizer
+    model_name: bert
+    model_weights: bert-base-chinese
+  - name: RegexFeaturizer
+  - name: "DIETClassifier"
+    epochs: 100
+  - name: EntitySynonymMapper
+
+
+policies: 
+  - name: RulePolicy
+    core_fallback_threshold: 1.0
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: true
+
+assistant_id: 20240513-230013-fast-trie
