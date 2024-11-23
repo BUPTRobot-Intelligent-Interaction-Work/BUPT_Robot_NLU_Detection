@@ -20,6 +20,8 @@ You could install the enviroments by (This is merely a reference!)
 pip install torch sentence-transformers flask flask-core
 ```
 
+Before you run the code, you need to [apply for a qwen api-key](https://help.aliyun.com/zh/dashscope/developer-reference/acquisition-and-configuration-of-api-key) and complete the right position.
+
 You could run the core backend by
 ```shell
  python main.py
