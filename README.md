@@ -28,5 +28,6 @@ You could run the core backend by
 May god bless you! 😘
 
 ## TODO
-
+  Too many codes in main.py! 
+  I'm planning to split these codes into a few parts for future maintaining before 2025.
   
